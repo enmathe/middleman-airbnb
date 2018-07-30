@@ -1,7 +1,10 @@
-#team {
-  height: 100vh;
-  align-items: center;
-  text-align: center;
+.team {
+  background-color: #D23333;
+  color: white;
+  height: calc(100vh-170px);
+  h1 {
+    margin-bottom: 5em;
+  }
 }
 
 .img-circle-new {

@@ -1,16 +1,18 @@
-<div ="team">
-  <h1 class="text-center">THE Team</h1>
-  <ul class="list-inline text-center">
-    <% ["emtht", "pagehey", "jeremyLS"].each do |gh_username| %>
-      <li>
-        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}/", class: "img-circle-new" %>
-        <h3><%= gh_username.capitalize %></h3>
-      </li>
-    <% end %>
-  </ul>
-  <div class="row">
-  <div class="col-md-4 col-md-offset-4">
-    <%=  link_to "Book a meeting", "https://calendar.google.com/calendar/r", class: "btn btn-primary center-block" %>
-  </div>
+<div id="about">
+  <div class="about-content">
+    <h1>Les shegueys <i class="fa fa-heart"></i></h1>
+    <ul class="list-inline">
+      <% ["emtht", "pagehey", "jeremyLS"].each do |gh_username| %>
+        <li>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}/", class: "img-circle-new" %>
+          <h3><%= gh_username.capitalize %></h3>
+        </li>
+      <% end %>
+        </li>
+    </ul>
+    <div class="col-md-4 col-md-offset-4">
+      <%=  link_to "Book a meeting", "https://calendar.google.com/calendar/r", class: "btn btn-primary center-block" %>
+    </div>
   </div>
 </div>
+
