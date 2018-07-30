@@ -1,0 +1,13 @@
+<div ="team">
+  <h1 class="text-center">THE Team</h1>
+  <ul class="list-inline text-center">
+    <% ["emtht", "pagehey", "jeremyLS"].each do |gh_username| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}/", class: "img-circle-new" %>
+        <h3><%= gh_username.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+
+  <%=  link_to "Book a meeting", "https://calendar.google.com/calendar/r", class: "btn btn-primary" %>
+</div>
